@@ -5,12 +5,7 @@ import {
   faGoogle,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import {
-  faMobile,
-  faUser,
-  faLock,
-  faEnvelope,
-} from "@fortawesome/free-solid-svg-icons";
+import { faUser, faLock, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 export default function SignUp() {
@@ -47,16 +42,6 @@ export default function SignUp() {
             />
           </div>
           <div className="field-container">
-            <FontAwesomeIcon icon={faMobile} className="signup-element" />
-            <input
-              className="input-field"
-              id="mobile"
-              type="number"
-              placeholder="Mobile"
-              required
-            />
-          </div>
-          <div className="field-container">
             <FontAwesomeIcon icon={faEnvelope} className="signup-element" />
             <input
               className="input-field"
@@ -74,6 +59,16 @@ export default function SignUp() {
               id="password"
               type="password"
               placeholder="Password"
+              required
+            />
+          </div>
+          <div className="field-container">
+            <FontAwesomeIcon icon={faLock} className="signup-element" />
+            <input
+              className="input-field"
+              id="confirm-password"
+              type="password"
+              placeholder="Confirm Password"
               required
             />
           </div>

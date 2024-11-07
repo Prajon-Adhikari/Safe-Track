@@ -33,6 +33,9 @@ export default function Nav() {
           <Link to="/signup">
             <button className="sign-button">Sign Up</button>
           </Link>
+          <Link to="/register">
+            <button className="sign-button">Register</button>
+          </Link>
         </div>
       </div>
       <Outlet />
